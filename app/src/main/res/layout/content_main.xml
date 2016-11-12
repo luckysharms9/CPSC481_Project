@@ -16,8 +16,9 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:id="@+id/helloText"/>
+        android:text="Welcome to Garden Guru!"
+        android:id="@+id/helloText"
+        android:layout_alignParentTop="true" />
 
     <TextView
         android:layout_width="match_parent"
@@ -27,12 +28,42 @@
         android:layout_below="@id/helloText" />
 
     <Button
-        android:text="Button"
+        android:text="My Garden"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/button"
-        android:layout_centerVertical="true"
+        android:id="@+id/gardenButton"
+        android:layout_below="@+id/myText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp" />
+
+    <Button
+        android:text="Plants"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/plantButton"
+        android:layout_marginTop="11dp"
+        android:layout_below="@+id/gardenButton"
         android:layout_centerHorizontal="true" />
+
+    <Button
+    android:text="Inspire Me!"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/inspireButton"
+    android:layout_marginTop="17dp"
+    android:layout_below="@id/plantButton"
+    android:layout_alignLeft="@+id/gardenButton"
+    android:layout_alignStart="@+id/gardenButton" />
+
+    <Button
+        android:text="Weather!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/weatherButton"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/inspireButton"
+        android:layout_alignRight="@+id/plantButton"
+        android:layout_alignEnd="@+id/plantButton" />
 
 
 </RelativeLayout>
