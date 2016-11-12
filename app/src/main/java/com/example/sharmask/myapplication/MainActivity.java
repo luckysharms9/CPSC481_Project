@@ -38,19 +38,8 @@ public class MainActivity extends AppCompatActivity {
                                }
         );
 
-        Button actionButton = (Button) findViewById(R.id.button);
-        actionButton.setOnClickListener(new View.OnClickListener() {
-            private int buttonState = 1;
-            @Override
-            public void onClick(View actionButton) {
-                if (buttonState % 2 == 0) {
-                    actionButton.setBackgroundColor(Color.RED);
-                } else {
-                    actionButton.setBackgroundColor(Color.BLUE);
-                }
-                buttonState++;
-            }
-        });
+
+
     }
 
 

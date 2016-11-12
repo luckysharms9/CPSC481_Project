@@ -43,7 +43,10 @@
         android:id="@+id/plantButton"
         android:layout_marginTop="11dp"
         android:layout_below="@+id/gardenButton"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignLeft="@+id/gardenButton"
+        android:layout_alignStart="@+id/gardenButton"
+        android:layout_alignRight="@+id/gardenButton"
+        android:layout_alignEnd="@+id/gardenButton" />
 
     <Button
     android:text="Inspire Me!"
@@ -63,7 +66,9 @@
         android:layout_marginTop="18dp"
         android:layout_below="@+id/inspireButton"
         android:layout_alignRight="@+id/plantButton"
-        android:layout_alignEnd="@+id/plantButton" />
+        android:layout_alignEnd="@+id/plantButton"
+        android:layout_alignLeft="@+id/inspireButton"
+        android:layout_alignStart="@+id/inspireButton" />
 
 
 </RelativeLayout>
